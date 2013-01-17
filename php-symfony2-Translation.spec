@@ -4,12 +4,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Symfony2 Translation Component
 Name:		php-symfony2-Translation
-Version:	2.1.4
+Version:	2.1.6
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	5c3bb586360d307bce8c4066f44c0170
+# Source0-md5:	1dd85de78af283bbbe483fb9bd017ea9
 URL:		http://pear.symfony.com/package/Translation/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
