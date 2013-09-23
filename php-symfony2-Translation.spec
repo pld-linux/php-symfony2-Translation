@@ -1,15 +1,14 @@
-%define		status		stable
 %define		pearname	Translation
 %define		php_min_version 5.3.3
 %include	/usr/lib/rpm/macros.php
-Summary:	%{pearname} - Symfony2 Translation Component
+Summary:	Symfony2 Translation Component
 Name:		php-symfony2-Translation
-Version:	2.1.6
+Version:	2.3.4
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	1dd85de78af283bbbe483fb9bd017ea9
+# Source0-md5:	f7fca75e975abc5035d8a4851b37dd5d
 URL:		http://pear.symfony.com/package/Translation/
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
@@ -23,21 +22,18 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Symfony2 Translation Component
-
-In PEAR status of this package is: %{status}.
+Translation provides tools for loading translation files and
+generating translated strings from these including support for
+pluralization.
 
 %prep
 %pear_package_setup
 
 # no packaging of tests
-rm -r .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/Tests .
+mv .%{php_pear_dir}/Symfony/Component/%{pearname}/phpunit.xml.dist .
 
 # fixups
-mv .%{php_pear_dir}/Symfony/Component/%{pearname}/CHANGELOG.md .
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitattributes
-rm .%{php_pear_dir}/Symfony/Component/%{pearname}/.gitignore
 mv docs/%{pearname}/Symfony/Component/%{pearname}/* .
 
 %install
@@ -54,7 +50,9 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/.registry/.channel.*/*.reg
 %dir %{php_pear_dir}/Symfony/Component/Translation
 %{php_pear_dir}/Symfony/Component/Translation/*.php
+%{php_pear_dir}/Symfony/Component/Translation/Catalogue
 %{php_pear_dir}/Symfony/Component/Translation/Dumper
+%{php_pear_dir}/Symfony/Component/Translation/Exception
 %{php_pear_dir}/Symfony/Component/Translation/Extractor
 %{php_pear_dir}/Symfony/Component/Translation/Loader
 %{php_pear_dir}/Symfony/Component/Translation/Writer
