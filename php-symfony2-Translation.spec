@@ -3,18 +3,24 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Translation Component
 Name:		php-symfony2-Translation
-Version:	2.3.4
+Version:	2.4.3
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	http://pear.symfony.com/get/%{pearname}-%{version}.tgz
-# Source0-md5:	f7fca75e975abc5035d8a4851b37dd5d
-URL:		http://pear.symfony.com/package/Translation/
+# Source0-md5:	9835ea141e8a225e37e3cf747f35386b
+URL:		http://symfony.com/doc/2.4/book/translation.html
 BuildRequires:	php-channel(pear.symfony.com)
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
+Requires:	php(json)
+Requires:	php(mbstring)
+Requires:	php(pcre)
+Requires:	php(simplexml)
+Requires:	php(spl)
+Requires:	php(xml)
 Requires:	php-channel(pear.symfony.com)
 Requires:	php-pear >= 4:1.3.10
 Suggests:	php-symfony2-Config
