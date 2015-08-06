@@ -58,3 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %{php_pear_dir}/Symfony/Component/Translation/Extractor
 %{php_pear_dir}/Symfony/Component/Translation/Loader
 %{php_pear_dir}/Symfony/Component/Translation/Writer
+/usr/share/pear/Symfony/Component/Translation/DataCollector
