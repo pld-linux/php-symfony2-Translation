@@ -11,7 +11,6 @@ Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{
 # Source0-md5:	3c22c10d95a1b02b77289427a5aad0f6
 URL:		http://symfony.com/doc/2.7/book/translation.html
 BuildRequires:	phpab
-BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.610
 Requires:	php(core) >= %{php_min_version}
 Requires:	php(json)
@@ -20,7 +19,6 @@ Requires:	php(pcre)
 Requires:	php(simplexml)
 Requires:	php(spl)
 Requires:	php(xml)
-Requires:	php-pear >= 4:1.3.10
 Suggests:	php-symfony2-Config
 Suggests:	php-symfony2-Yaml
 Conflicts:	php-symfony2-Config < 2.7
