@@ -4,7 +4,7 @@
 Summary:	Symfony2 Translation Component
 Name:		php-symfony2-Translation
 Version:	2.7.7
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
@@ -53,9 +53,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{php_data_dir}/Symfony/Component/Translation
 %{php_data_dir}/Symfony/Component/Translation/*.php
 %{php_data_dir}/Symfony/Component/Translation/Catalogue
+%{php_data_dir}/Symfony/Component/Translation/DataCollector
 %{php_data_dir}/Symfony/Component/Translation/Dumper
 %{php_data_dir}/Symfony/Component/Translation/Exception
 %{php_data_dir}/Symfony/Component/Translation/Extractor
 %{php_data_dir}/Symfony/Component/Translation/Loader
 %{php_data_dir}/Symfony/Component/Translation/Writer
-/usr/share/pear/Symfony/Component/Translation/DataCollector
