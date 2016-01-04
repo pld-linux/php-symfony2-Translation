@@ -19,6 +19,7 @@ Requires:	php(pcre)
 Requires:	php(simplexml)
 Requires:	php(spl)
 Requires:	php(xml)
+Requires:	php-dirs >= 1.6
 Suggests:	php-symfony2-Config
 Suggests:	php-symfony2-Yaml
 Conflicts:	php-symfony2-Config < 2.7
