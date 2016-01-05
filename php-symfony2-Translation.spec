@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	Symfony2 Translation Component
 Name:		php-symfony2-Translation
-Version:	2.7.7
-Release:	2
+Version:	2.7.8
+Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	3c22c10d95a1b02b77289427a5aad0f6
+# Source0-md5:	639c04e1a1340778ff1598ca68eb4616
 URL:		http://symfony.com/doc/2.7/book/translation.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
