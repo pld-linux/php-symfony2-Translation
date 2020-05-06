@@ -2,12 +2,12 @@
 %define		php_min_version 5.3.9
 Summary:	Symfony2 Translation Component
 Name:		php-symfony2-Translation
-Version:	2.7.8
+Version:	2.8.52
 Release:	1
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/symfony/%{package}/archive/v%{version}/%{package}-%{version}.tar.gz
-# Source0-md5:	639c04e1a1340778ff1598ca68eb4616
+# Source0-md5:	a14255fef69313a738cfdbd28415e499
 URL:		http://symfony.com/doc/2.7/book/translation.html
 BuildRequires:	phpab
 BuildRequires:	rpmbuild(macros) >= 1.610
@@ -56,4 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %{php_data_dir}/Symfony/Component/Translation/Exception
 %{php_data_dir}/Symfony/Component/Translation/Extractor
 %{php_data_dir}/Symfony/Component/Translation/Loader
+%{php_data_dir}/Symfony/Component/Translation/Util
 %{php_data_dir}/Symfony/Component/Translation/Writer
